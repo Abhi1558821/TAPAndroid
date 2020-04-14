@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/searchFragment"
+            app:showAsAction="withText"
+            android:title="Dashboard"
+            android:icon="@mipmap/icon_dashboard"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/searchFragment2"
+            android:title="Execute"
+            android:icon="@mipmap/icon_execute" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/searchFragment3"
+            android:title="Monitor"
+            android:icon="@mipmap/icon_monitor" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/searchFragment4"
+            android:title="Manage"
+            android:icon="@mipmap/icon_manage"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/searchFragment5"
+            android:title="Profile"
+            android:icon="@mipmap/icon_profile"/>
+    </group>
+</menu>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_choose_best_configuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the test configuration"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/txt_job_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_choose_best_configuration"
+        android:text="Job Name"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/bg_black_border"/>
+
+    <EditText
+        android:id="@+id/et_job_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Job Name"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/txt_choose_best_configuration"
+        android:layout_toRightOf="@+id/txt_job_name"
+        android:background="@drawable/bg_black_border"/>
+
+    <TextView
+        android:id="@+id/txt_select_module"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_job_name"
+        android:layout_marginTop="8dp"
+        android:text="Module"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/bg_black_border"/>
+
+    <RadioGroup
+        android:id="@+id/rg_module"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_black_border"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/et_job_name"
+        android:layout_toRightOf="@+id/txt_select_module"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_module_production"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:onClick="onCustomClick"
+            android:text="Production" />
+
+        <RadioButton
+            android:id="@+id/rb_module_regression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:onClick="onCustomClick"
+            android:text="Regression" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_select_scenario"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_select_module"
+        android:layout_marginTop="8dp"
+        android:text="Scenario"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/bg_black_border"/>
+
+    <RadioGroup
+        android:id="@+id/rg_scenario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_black_border"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/txt_select_module"
+        android:layout_toRightOf="@+id/txt_select_scenario"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_scenario_internal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:onClick="onCustomClick"
+            android:text="Internal" />
+
+        <RadioButton
+            android:id="@+id/rb_scenario_remote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:onClick="onCustomClick"
+            android:text="Remote" />
+    </RadioGroup>
+</RelativeLayout>
